@@ -22,15 +22,34 @@ Default configuration values are stored in the `env.template` file, edit it befo
 
 ## Deployment
 
-Clone repository && then `cd` into it && the containers can be brought up using the supplied `start_wordpress.sh`
+### Quick default deployment (one-liner)
+
+Clone the repository && then `cd` into it && the containers can be brought up by using the supplied `start_wordpress.sh`
 
 ```
 git clone https://github.com/sidorkinandrew/genesis_devops.git && cd ./genesis_devops && ./start_wordpress.sh
 ```
 
-Note: the script will rename the `env.template` to `.env` file,
-in case you want to apply custom configuration - 
-please edit the env.template before the deployment.
+Note in case you want to apply custom configuration - 
+please edit the env.template before the deployment
+by following the "custom deployment" steps below
+
+#### Custom deployment
+
+1. Clone the repository and cd into it
+```
+git clone https://github.com/sidorkinandrew/genesis_devops.git && cd ./genesis_devops 
+```
+2. Edit the `env.template` file
+Note: the script below will rename the `env.template` to `.env` file
+
+3. Start the deployment
+
+```
+./start_wordpress.sh
+```
+
+#### Check the deployment
 
 The success of the deployment can be verified by navigating to `http://localhost` in a browser (in case you have GUI on the host)
 or by using curl in a terminal window - 
