@@ -4,6 +4,7 @@ Notes:
 - Uses the FPM version of WordPress (v5-fpm)
 - Uses MySQL as the database (v8)
 - Uses Nginx as the web server (v1)
+
 the versions above can be adjusted by editing the `env.template` file
 
 ### Host requirements
