@@ -1,5 +1,7 @@
 # WordPress (FPM) on Docker with Nginx
 
+Case file link - https://github.com/amomama/devops-school
+
 Notes:
 - Uses the FPM version of WordPress (v5-fpm)
 - Uses MySQL as the database (v8)
