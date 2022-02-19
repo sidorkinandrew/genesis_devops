@@ -26,7 +26,8 @@ git clone https://github.com/sidorkinandrew/genesis_devops.git && cd ./genesis_d
 ```
 
 Note: the script will rename the `env.template` to `.env` file,
-please edit the env.template before deployment.
+in case you want to apply custom configuration - 
+please edit the env.template before the deployment.
 
 The success of the deployment can be verified by navigating to `http://localhost` in a browser (in case you have GUI on the host)
 or by using curl in a terminal window - 
