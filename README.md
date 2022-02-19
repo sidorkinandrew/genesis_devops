@@ -22,7 +22,7 @@ Default configuration values are stored in the `env.template` file, edit it befo
 Clone repository && then `cd` into it && the containers can be brought up using the supplied `start_wordpress.sh`
 
 ```
-git clone git@github.com:sidorkinandrew/genesis_devops.git && cd ./genesis_devops && ./start_wordpress.sh
+git clone https://github.com/sidorkinandrew/genesis_devops.git && cd ./genesis_devops && ./start_wordpress.sh
 ```
 
 Note: the script will rename the `env.template` to `.env` file,
