@@ -22,7 +22,7 @@ Default configuration values are stored in the `env.template` file, edit it befo
 
 ## Deployment
 
-### Quick default deployment (one-liner)
+#### Quick default deployment (one-liner)
 
 Clone the repository && then `cd` into it && the containers can be brought up by using the supplied `start_wordpress.sh`
 
