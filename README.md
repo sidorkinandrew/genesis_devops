@@ -8,7 +8,7 @@ the versions above can be adjusted by editing the `env.template` file
 
 ### Host requirements
 
-Both Docker and Docker Compose are required on the host to run this code
+Git, Docker and Docker Compose are required on the host to run this code
 
 - Install Docker Engine: [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
 - Install Docker Compose: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
@@ -19,11 +19,10 @@ Default configuration values are stored in the `env.template` file, edit it befo
 
 ## Deployment
 
-Once the env.template is configured/edited - 
-the containers can be brought up using the supplied `start_wordpress.sh`
+Clone repository && then `cd` into it && the containers can be brought up using the supplied `start_wordpress.sh`
 
 ```
-./start_wordpress.sh
+git clone git@github.com:sidorkinandrew/genesis_devops.git && cd ./genesis_devops && ./start_wordpress.sh
 ```
 
 Note: the script will rename the `env.template` to `.env` file,
@@ -46,6 +45,7 @@ For a complete teardown all containers must be stopped and removed along with th
 Commands
 
 ```console
+docker-compose down --remove-orphans
 docker-compose stop
 docker-compose rm -fv
 docker-network rm wp-wordpress
